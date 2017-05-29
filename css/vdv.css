@@ -1,0 +1,68 @@
+h1 {
+	text-align: center;
+}
+
+body {
+	font-family:'Open Sans',Arial,sans-serif;
+	line-height:1.5;
+	background: none;
+	overflow-x: hidden;
+}
+
+input {
+	cursor: pointer;
+	background-color: #F8F8F8;
+}
+
+li > a {
+	cursor: pointer;
+}
+
+#chartdiv {
+	margin-top: 20px;
+	margin-bottom: 5px;
+	height: 600px;
+	background-color: #F8F8F8;
+}
+
+#main_page {
+	border-left: 1px solid #008B8B;
+	border-right: 1px solid #008B8B;
+}
+
+#main_page:hover {
+	color: #800080;
+	font-weight: bold;
+	background-color: #DCDCDC;
+	border: 1px solid #AFEEEE;
+}
+
+.dropdown-menu {
+	width: 100%;
+	max-height: 350px; 
+	height: auto;
+	overflow-x: hidden;
+}
+
+.dropdown-toggle {
+	width: 100%;
+	text-align: left;
+}
+
+.vdvcontainer {
+	background-color: #F8F8F8;
+	margin-bottom: 5px;
+}
+
+#stationTitle {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#errorMessage {
+	display: none;
+}
+
+#checkboxes {
+	display: none;
+}

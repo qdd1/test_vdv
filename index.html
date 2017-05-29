@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TestVDV</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/vdv.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" id="main_page" href="#">TestVDV</a>
+			</div>
+		</div>
+    </nav>
+
+    <div class="container">
+		<!-- Main component -->
+		<div class="row">
+			<div class="vdvcontainer">
+				<div class="col-lg-3 col-md-12">
+					<div id="stationTitle">Stations:</div>
+					<div class="dropdown">
+						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<span class="caret"></span>
+							<span id="selectedStation" data-currindex = "0">Choose a station</span>
+						</button>
+						<ul class="dropdown-menu" id="stations" role="menu" aria-labelledby="dropdownMenu1">
+						</ul>
+					</div> 
+				</div>
+			</div>		
+		</div>
+
+		<div class="column" id="checkboxes">
+			<div class="vdvcontainer">
+				<div class="row-lg-2 row-md-12">
+					<div class="checkbox">
+						<label><input type='checkbox' id="windspeed" onclick='checkboxClick(this);'>Wind Speed</label>
+						<label><input type='checkbox' id="temperature" onclick='checkboxClick(this);'>Air Temperature</label>
+						<label><input type='checkbox' id="dewlimit" onclick='checkboxClick(this);'>Dew Limit</label>
+					</div> 
+				</div>
+			</div>		
+		</div>
+
+		<div id="errorMessage" class="row alert alert-danger" role="alert">
+			<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+			<span id="errorMessageText"></span>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12" id="chartdiv"></div>
+		</div>
+    </div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="highcharts/highcharts.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/vdv.js"></script>
+  </body>
+</html>
